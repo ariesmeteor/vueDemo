@@ -12,7 +12,7 @@ const mocks = [
   ...article,
   ...search
 ]
-
+//对于mock 可以参考文档：panjiachen.gitee.io/vue-element-admin-site/zh/guide/essentials/mock-api.html
 // for front mock
 // please use it cautiously, it will redefine XMLHttpRequest,
 // which will cause many of your third-party libraries to be invalidated(like progress event).

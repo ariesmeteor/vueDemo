@@ -24,11 +24,12 @@ const users = {
 }
 
 module.exports = [
-  // user login
+  // user login  模拟服务器 构造用户信息，并返回
   {
     url: '/vue-element-admin/user/login',
     type: 'post',
     response: config => {
+      console.log(config.body)
       const { username } = config.body
       const token = tokens[username]
 
@@ -42,7 +43,8 @@ module.exports = [
 
       return {
         code: 20000,
-        data: token
+        data: token,
+        test: 'test'
       }
     }
   },

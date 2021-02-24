@@ -484,6 +484,19 @@ const asyncRoutes = [
   },
 
   {
+    path: '/i18na',
+    component: 'layout/Layout',
+    children: [
+      {
+        path: 'index',
+        component: 'views/i18n-demo/index',
+        name: 'I18na',
+        meta: { title: 'i18na', icon: 'international' }
+      }
+    ]
+  },
+
+  {
     path: '/clipboard',
     component: 'layout/Layout',
     redirect: 'noRedirect',

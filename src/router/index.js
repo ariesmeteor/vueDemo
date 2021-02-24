@@ -360,6 +360,19 @@ export const asyncRoutes = [
   },
 
   {
+    path: '/i18na',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/i18n-demo/index'),
+        name: 'I18na',
+        meta: { title: 'i18na', icon: 'international' }
+      }
+    ]
+  },
+
+  {
     path: '/clipboard',
     component: Layout,
     children: [
